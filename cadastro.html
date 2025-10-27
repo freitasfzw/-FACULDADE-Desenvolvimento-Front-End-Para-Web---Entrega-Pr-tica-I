@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
+  <title>Cadastro - ONG Esperança</title>
+  <meta name="description" content="Formulário de inscrição para voluntários e doadores.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="assets/images/logo.webp" alt="Logotipo da ONG Esperança">
+        <h1 class="site-title">ONG Esperança</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="cadastro.html" class="active">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Cadastro de Voluntário / Doador</h2>
+    <form id="formCadastro">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome Completo *</label>
+        <input type="text" name="nome" required>
+        <label>E-mail *</label>
+        <input type="email" name="email" required>
+        <label>CPF *</label>
+        <input type="text" name="cpf" required maxlength="14">
+        <label>Telefone *</label>
+        <input type="tel" name="telefone" required>
+      </fieldset>
+      <div class="actions">
+        <button type="submit" class="btn-primary">Enviar</button>
+        <button type="reset" class="btn-secondary">Limpar</button>
+      </div>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> ONG Esperança — Solidariedade que transforma.</p>
+  </footer>
+  <script src="assets/js/scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

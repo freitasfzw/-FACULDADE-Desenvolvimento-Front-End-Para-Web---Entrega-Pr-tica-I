@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
+  <title>Projetos - ONG Esperança</title>
+  <meta name="description" content="Conheça os projetos sociais e oportunidades de voluntariado da ONG Esperança.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="assets/images/logo.webp" alt="Logotipo da ONG Esperança">
+        <h1 class="site-title">ONG Esperança</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="projetos.html" class="active">Projetos</a>
+        <a href="cadastro.html">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Nossos Projetos</h2>
+    <p>Conheça as iniciativas que estão transformando vidas.</p>
+    <section class="card">
+      <h3>📚 Projeto Educação</h3>
+      <p>Oficinas de leitura, reforço escolar e apoio psicológico.</p>
+    </section>
+    <section class="card">
+      <h3>🌿 Projeto Verde Esperança</h3>
+      <p>Plantio de árvores e educação ambiental em escolas públicas.</p>
+      <a href="cadastro.html" class="btn-primary">Quero ser voluntário</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> ONG Esperança — Cuidando do planeta e das pessoas.</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
